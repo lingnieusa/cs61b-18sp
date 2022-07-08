@@ -27,14 +27,14 @@ public class LinkedListDeque<T> {
         size = 0;
     }
 
-    public LinkedListDeque(T x) {
-        this();
-        addFirst(x);
+//    public LinkedListDeque(T x) {
+//        this();
+//        addFirst(x);
 //        sentinel = new Node(null, null,null);
 //        sentinel.next = new Node(x, sentinel,sentinel);
 //        sentinel.pre=sentinel.next;
 //        size = 1;
-    }
+//    }
 
     public boolean isEmpty() {
         return size == 0;
@@ -107,7 +107,7 @@ public class LinkedListDeque<T> {
         return ptr.item;
     }
 
-    public T getIndex(int index, Node p) {
+    private T getIndex(int index, Node p) {
         if (index == 0) {
             return p.item;
         }

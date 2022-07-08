@@ -38,7 +38,6 @@ public class LinkedListDequeTest {
 		System.out.println("Make sure to uncomment the lines below (and delete this print statement).");
 
 		LinkedListDeque<String> lld1 = new LinkedListDeque<String>();
-		LinkedListDeque<String> lld2 = new LinkedListDeque<String>("test");
 
 		boolean passed = checkEmpty(true, lld1.isEmpty());
 

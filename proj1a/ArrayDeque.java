@@ -118,30 +118,30 @@ public class ArrayDeque<T> {
         return array[(first + index + 1) % capacity];
     }
 
-
-    public static void main(String[] args) {
-        ArrayDeque<Integer> a = new ArrayDeque<>();
-        a.addLast(5);
-        a.addLast(6);
-        a.addLast(7);
-        a.addFirst(4);
-
-        a.addLast(8);
-        a.addLast(9);
-        a.addLast(10);
-        a.addFirst(3);
-        a.addFirst(2);
-        a.addFirst(1);
-
-        a.printDeque();
-
-        a.removeFirst();
-        a.removeLast();
-        a.removeLast();
-        a.removeLast();
-        a.removeLast();
-        a.removeLast();
-        a.printDeque();
-        System.out.println(a.capacity);
-    }
+//
+//    public static void main(String[] args) {
+//        ArrayDeque<Integer> a = new ArrayDeque<>();
+//        a.addLast(5);
+//        a.addLast(6);
+//        a.addLast(7);
+//        a.addFirst(4);
+//
+//        a.addLast(8);
+//        a.addLast(9);
+//        a.addLast(10);
+//        a.addFirst(3);
+//        a.addFirst(2);
+//        a.addFirst(1);
+//
+//        a.printDeque();
+//
+//        a.removeFirst();
+//        a.removeLast();
+//        a.removeLast();
+//        a.removeLast();
+//        a.removeLast();
+//        a.removeLast();
+//        a.printDeque();
+//        System.out.println(a.capacity);
+//    }
 }
