@@ -88,6 +88,7 @@ public class LinkedListDequeTest {
 		lld1.addLast(4);
 		lld1.addLast(5);
 		int res = lld1.getRecursive(3);
+		int res2 = lld1.get(3);
 		printTestStatus(passed);
 		/*
 		*/

@@ -23,8 +23,8 @@ public class ArrayDeque<T> {
 //            array[first] = item;
 //            first = first - 1 < 0 ? capacity - 1 : first - 1;
 //        } else {
-            array[last] = item;
-            last = (last + 1) % capacity;
+        array[last] = item;
+        last = (last + 1) % capacity;
 //        }
         size++;
         if (size == capacity) {
@@ -62,9 +62,6 @@ public class ArrayDeque<T> {
     }
 
 
-
-
-
     public boolean isEmpty() {
         return size == 0;
     }
@@ -93,7 +90,7 @@ public class ArrayDeque<T> {
         size--;
         first = (first + 1) % capacity;
         T res = array[first];
-        array[first]=null;
+        array[first] = null;
         if ((size * 1.0 / capacity) < 0.251) {
             shrink();
         }
@@ -107,7 +104,7 @@ public class ArrayDeque<T> {
         size--;
         last = last - 1 < 0 ? capacity - 1 : last - 1;
         T res = array[last];
-        array[last]=null;
+        array[last] = null;
         if ((size * 1.0 / capacity) < 0.251) {
             shrink();
         }
@@ -122,7 +119,7 @@ public class ArrayDeque<T> {
     }
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         ArrayDeque<Integer> a = new ArrayDeque<>();
         a.addLast(5);
         a.addLast(6);
